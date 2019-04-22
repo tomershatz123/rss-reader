@@ -1,0 +1,13 @@
+<div class="container">
+  <form >
+    <div class="form-group">
+      <label for="rss">RSS Feed</label>
+      <div class="input-group">
+        <input type="text" class="form-control" id="rss" name="rss" required [(ngModel)]="rssAddress" spellcheck="false">
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default" (click)="refreshFeed()" [disabled]="rssAddress.length===0"><span class="glyphicon glyphicon-download" aria-hidden="true"></span>&nbsp;Load</button>
+        </span>
+    </div>
+    </div>
+  </form>
+</div>

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { FeedService } from './feed-service.service';
+
+import { FeedService } from '../feed-service.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-select-feed',
+  templateUrl: './select-feed.component.html',
+  styleUrls: ['./select-feed.component.css']
 })
-export class AppComponent {
+export class SelectFeedComponent {
   rssAddress = 'http://www.ynet.co.il/Integration/StoryRss1854.xml';
 
   constructor (private feedService: FeedService) {}

@@ -1,0 +1,6 @@
+<div class="container">
+  <label *ngIf="(feedItemsObservable | async)?.length > 0">Results:</label>
+  <ul class="list-group">
+    <app-feed-card *ngFor="let feed of (feedItemsObservable | async)" [feed]="feed" ></app-feed-card>
+  </ul>
+</div>
