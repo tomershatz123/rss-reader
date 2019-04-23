@@ -8,8 +8,6 @@ import { FeedCardComponent } from './feed-card/feed-card.component';
 import { SelectFeedComponent } from './select-feed/select-feed.component';
 import { FeedResultsComponent } from './feed-results/feed-results.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
